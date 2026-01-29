@@ -1,16 +1,24 @@
-editors_in_chief:
-  - name: "Jörg Osterrieder"
-    affiliation: "University of Twente, Netherlands; Bern University of Applied Sciences, Switzerland"
-    image: ""
+- name: "Jörg Osterrieder"
+  role: "Editor-in-Chief"
+  affiliation: "University of Twente; Bern University of Applied Sciences"
+  country: "Netherlands / Switzerland"
 
-associate_editors:
-  - name: "Petre Caraiani"
-    affiliation: "Bucharest University of Economic Studies, Romania"
-  - name: "Maria Grith"
-    affiliation: "Erasmus University Rotterdam, Netherlands"
+- name: "Petre Caraiani"
+  role: "Associate Editor"
+  affiliation: "Bucharest University of Economic Studies"
+  country: "Romania"
 
-editorial_board:
-  - name: "Editorial Board Member 1"
-    affiliation: "University Name"
-  - name: "Editorial Board Member 2"
-    affiliation: "University Name"
+- name: "Maria Grith"
+  role: "Associate Editor"
+  affiliation: "Erasmus University Rotterdam"
+  country: "Netherlands"
+
+- name: "Editorial Board Member 1"
+  role: "Editorial Board Member"
+  affiliation: "University Name"
+  country: "Country"
+
+- name: "Editorial Board Member 2"
+  role: "Editorial Board Member"
+  affiliation: "University Name"
+  country: "Country"
