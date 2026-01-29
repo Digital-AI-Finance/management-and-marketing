@@ -1,0 +1,67 @@
+2026-01-29 14:04:53,754 - __main__ - INFO - ============================================================
+2026-01-29 14:04:53,755 - __main__ - INFO - Starting Management & Marketing Journal Scraper
+2026-01-29 14:04:53,757 - __main__ - INFO - ============================================================
+2026-01-29 14:04:53,761 - api_client - WARNING - No Springer API key provided. API functionality will be limited.
+2026-01-29 14:04:53,762 - __main__ - INFO - Springer API not available - will use web scraping
+2026-01-29 14:04:53,762 - __main__ - INFO - Scraper initialized with base URL: https://link.springer.com/journal/44491
+2026-01-29 14:04:53,763 - __main__ - INFO - Fetching journal information
+2026-01-29 14:04:53,763 - __main__ - INFO - Using web scraping fallback for journal info
+2026-01-29 14:04:53,768 - robots_checker - INFO - Fetching robots.txt from https://link.springer.com/robots.txt
+2026-01-29 14:04:54,337 - robots_checker - INFO - Successfully fetched and parsed robots.txt
+2026-01-29 14:04:54,339 - robots_checker - WARNING - URL disallowed by robots.txt: https://link.springer.com/journal/44491
+2026-01-29 14:04:54,339 - __main__ - WARNING - Access to https://link.springer.com/journal/44491 disallowed by robots.txt
+2026-01-29 14:04:54,341 - __main__ - ERROR - Failed to fetch journal homepage
+2026-01-29 14:04:54,341 - __main__ - INFO - Fetching articles (start=1, count=50, year=None)
+2026-01-29 14:04:54,342 - __main__ - INFO - Using web scraping fallback for articles
+2026-01-29 14:04:54,343 - robots_checker - WARNING - URL disallowed by robots.txt: https://link.springer.com/journal/44491/articles?page=1
+2026-01-29 14:04:54,343 - __main__ - WARNING - Access to https://link.springer.com/journal/44491/articles?page=1 disallowed by robots.txt
+2026-01-29 14:04:54,343 - __main__ - INFO - Fetching editorial board
+2026-01-29 14:04:54,344 - robots_checker - WARNING - URL disallowed by robots.txt: https://link.springer.com/journal/44491/editors
+2026-01-29 14:04:54,344 - __main__ - WARNING - Access to https://link.springer.com/journal/44491/editors disallowed by robots.txt
+2026-01-29 14:04:54,345 - __main__ - ERROR - Failed to fetch editorial board page
+2026-01-29 14:04:54,346 - __main__ - INFO - Fetching aims and scope
+2026-01-29 14:04:54,347 - robots_checker - WARNING - URL disallowed by robots.txt: https://link.springer.com/journal/44491/aims-and-scope
+2026-01-29 14:04:54,347 - __main__ - WARNING - Access to https://link.springer.com/journal/44491/aims-and-scope disallowed by robots.txt
+2026-01-29 14:04:54,348 - __main__ - ERROR - Failed to fetch aims and scope page
+2026-01-29 14:04:54,348 - __main__ - INFO - ============================================================
+2026-01-29 14:04:54,348 - __main__ - INFO - Scraping completed successfully
+2026-01-29 14:04:54,348 - __main__ - INFO - ============================================================
+2026-01-29 14:04:54,350 - __main__ - INFO - Scraper closed
+2026-01-29 14:08:20,486 - __main__ - INFO - ============================================================
+2026-01-29 14:08:20,487 - __main__ - INFO - Starting Management & Marketing Journal Scraper
+2026-01-29 14:08:20,487 - __main__ - INFO - ============================================================
+2026-01-29 14:08:20,488 - api_client - WARNING - No Springer API key provided. API functionality will be limited.
+2026-01-29 14:08:20,489 - __main__ - INFO - Springer API not available - will use web scraping
+2026-01-29 14:08:20,489 - __main__ - INFO - Scraper initialized with base URL: https://link.springer.com/journal/44491
+2026-01-29 14:08:20,489 - __main__ - INFO - Fetching journal information
+2026-01-29 14:08:20,489 - __main__ - INFO - Using web scraping fallback for journal info
+2026-01-29 14:08:20,489 - robots_checker - INFO - Fetching robots.txt from https://link.springer.com/robots.txt
+2026-01-29 14:08:20,913 - robots_checker - INFO - Successfully fetched and parsed robots.txt
+2026-01-29 14:08:21,780 - __main__ - INFO - Redirect chain for https://link.springer.com/journal/44491:
+2026-01-29 14:08:21,780 - __main__ - INFO -   303 -> https://link.springer.com/journal/44491
+2026-01-29 14:08:21,780 - __main__ - INFO -   302 -> https://idp.springer.com/authorize?response_type=cookie&client_id=springerlink&redirect_uri=https%3A%2F%2Flink.springer.com%2Fjournal%2F44491
+2026-01-29 14:08:21,780 - __main__ - INFO -   302 -> https://idp.springer.com/transit?redirect_uri=https%3A%2F%2Flink.springer.com%2Fjournal%2F44491&code=0e4a8062-22cb-417c-abce-a2db5357f3fc
+2026-01-29 14:08:21,782 - __main__ - INFO -   Final: 200 -> https://link.springer.com/journal/44491
+2026-01-29 14:08:21,782 - __main__ - INFO - Successfully fetched: https://link.springer.com/journal/44491
+2026-01-29 14:08:22,045 - __main__ - WARNING - No elements found for selector key 'journal_title'
+2026-01-29 14:08:22,107 - __main__ - WARNING - No elements found for selector key 'journal_description'
+2026-01-29 14:08:22,111 - __main__ - INFO - Data saved to data\journal_info.json
+2026-01-29 14:08:22,111 - __main__ - INFO - Fetching articles (start=1, count=50, year=None)
+2026-01-29 14:08:22,111 - __main__ - INFO - Using web scraping fallback for articles
+2026-01-29 14:08:23,777 - __main__ - INFO - Successfully fetched: https://link.springer.com/journal/44491/articles?page=1
+2026-01-29 14:08:23,966 - __main__ - WARNING - No elements found for selector key 'article_title'
+2026-01-29 14:08:23,966 - __main__ - INFO - No more articles found
+2026-01-29 14:08:23,966 - __main__ - INFO - Fetching editorial board
+2026-01-29 14:08:26,368 - __main__ - INFO - Redirect chain for https://link.springer.com/journal/44491/editors:
+2026-01-29 14:08:26,370 - __main__ - INFO -   301 -> https://link.springer.com/journal/44491/editors
+2026-01-29 14:08:26,370 - __main__ - INFO -   Final: 200 -> https://link.springer.com/journal/44491/editorial-board
+2026-01-29 14:08:26,371 - __main__ - INFO - Successfully fetched: https://link.springer.com/journal/44491/editors
+2026-01-29 14:08:26,590 - __main__ - WARNING - No elements found for selector key 'editorial_board_member'
+2026-01-29 14:08:26,592 - __main__ - INFO - Found 0 editorial board members
+2026-01-29 14:08:26,592 - __main__ - INFO - Fetching aims and scope
+2026-01-29 14:08:28,980 - __main__ - INFO - Successfully fetched: https://link.springer.com/journal/44491/aims-and-scope
+2026-01-29 14:08:29,167 - __main__ - WARNING - No elements found for selector key 'aims_scope'
+2026-01-29 14:08:29,167 - __main__ - INFO - ============================================================
+2026-01-29 14:08:29,167 - __main__ - INFO - Scraping completed successfully
+2026-01-29 14:08:29,167 - __main__ - INFO - ============================================================
+2026-01-29 14:08:29,169 - __main__ - INFO - Scraper closed
