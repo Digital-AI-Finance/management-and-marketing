@@ -7,149 +7,32 @@ description: Complete editor team of Management & Marketing journal
 <div class="content-page">
   <div class="section-header">
     <h1 class="section-title">Editor Team</h1>
-    <p class="section-subtitle">Complete team overview with research specializations</p>
   </div>
 
-  <!-- Lead Editors -->
-  <section class="team-section">
-    <h2 class="team-role-title">Lead Editors</h2>
-    <div class="team-lead-grid">
-      {% for m in site.data.editor_team %}
-        {% if m.role == "Lead Editor" %}
-        <div class="team-lead-card">
-          <h3>{{ m.name }}</h3>
-          {% if m.affiliation %}<p class="team-affiliation">{{ m.affiliation }}</p>{% endif %}
-          {% if m.country %}<p class="team-location">{{ m.country }}</p>{% endif %}
-          {% if m.qualification %}<p class="team-qual">{{ m.qualification }}</p>{% endif %}
-          {% if m.specializations %}<p class="team-specs">{{ m.specializations }}</p>{% endif %}
-          {% if m.email %}<p class="team-email"><a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
-        </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </section>
-
-  <!-- Founding Editors & Advisory Board -->
-  <div class="team-two-col">
-    <section class="team-section">
-      <h2 class="team-role-title">Founding Editors</h2>
-      <ul class="team-compact-list">
+  <div class="table-responsive">
+    <table class="team-table team-table-copyable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Role</th>
+          <th>Email</th>
+          <th>Affiliation</th>
+          <th>Country</th>
+          <th>Specializations</th>
+        </tr>
+      </thead>
+      <tbody>
         {% for m in site.data.editor_team %}
-          {% if m.role == "Founding Editor" %}
-          <li>
-            <strong>{{ m.name }}</strong>
-            {% if m.affiliation %}<br><span class="team-meta">{{ m.affiliation }}</span>{% endif %}
-            {% if m.country %}<span class="team-meta"> &middot; {{ m.country }}</span>{% endif %}
-          </li>
-          {% endif %}
+        <tr>
+          <td class="team-td-name">{{ m.name }}</td>
+          <td class="team-td-role"><span class="role-badge role-{{ m.role | slugify }}">{{ m.role }}</span></td>
+          <td class="team-td-email">{% if m.email %}<a href="mailto:{{ m.email }}">{{ m.email }}</a>{% endif %}</td>
+          <td>{{ m.affiliation | default: "" }}</td>
+          <td class="team-td-country">{{ m.country | default: "" }}</td>
+          <td class="team-td-specs">{{ m.specializations | default: "" }}</td>
+        </tr>
         {% endfor %}
-      </ul>
-    </section>
-
-    <section class="team-section">
-      <h2 class="team-role-title">Advisory Board</h2>
-      <ul class="team-compact-list">
-        {% for m in site.data.editor_team %}
-          {% if m.role == "Advisory Board" %}
-          <li>
-            <strong>{{ m.name }}</strong>
-            {% if m.affiliation %}<br><span class="team-meta">{{ m.affiliation }}</span>{% endif %}
-            {% if m.country %}<span class="team-meta"> &middot; {{ m.country }}</span>{% endif %}
-          </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </section>
+      </tbody>
+    </table>
   </div>
-
-  <!-- Managing & Assistant Editors -->
-  <div class="team-two-col">
-    <section class="team-section">
-      <h2 class="team-role-title">Managing Editors</h2>
-      <ul class="team-compact-list">
-        {% for m in site.data.editor_team %}
-          {% if m.role == "Managing Editor" %}
-          <li>
-            <strong>{{ m.name }}</strong>
-            {% if m.affiliation %}<br><span class="team-meta">{{ m.affiliation }}</span>{% endif %}
-            {% if m.specializations %}<br><span class="team-specs-inline">{{ m.specializations }}</span>{% endif %}
-          </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </section>
-
-    <section class="team-section">
-      <h2 class="team-role-title">Assistant Editors</h2>
-      <ul class="team-compact-list">
-        {% for m in site.data.editor_team %}
-          {% if m.role == "Assistant Editor" %}
-          <li>
-            <strong>{{ m.name }}</strong>
-            {% if m.affiliation %}<br><span class="team-meta">{{ m.affiliation }}</span>{% endif %}
-            {% if m.specializations %}<br><span class="team-specs-inline">{{ m.specializations }}</span>{% endif %}
-          </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </section>
-  </div>
-
-  <!-- Associate Editors (table) -->
-  <section class="team-section">
-    <h2 class="team-role-title">Associate Editors</h2>
-    <div class="table-responsive">
-      <table class="team-table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Affiliation</th>
-            <th>Country</th>
-            <th>Specializations</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for m in site.data.editor_team %}
-            {% if m.role == "Associate Editor" %}
-            <tr>
-              <td class="team-td-name">{{ m.name }}</td>
-              <td>{{ m.affiliation | default: "" }}</td>
-              <td class="team-td-country">{{ m.country | default: "" }}</td>
-              <td class="team-td-specs">{{ m.specializations | default: "" }}</td>
-            </tr>
-            {% endif %}
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- Editorial Board Members (table) -->
-  <section class="team-section">
-    <h2 class="team-role-title">Editorial Board Members</h2>
-    <div class="table-responsive">
-      <table class="team-table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Affiliation</th>
-            <th>Country</th>
-            <th>Specializations</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for m in site.data.editor_team %}
-            {% if m.role == "Editorial Board Member" %}
-            <tr>
-              <td class="team-td-name">{{ m.name }}</td>
-              <td>{{ m.affiliation | default: "" }}</td>
-              <td class="team-td-country">{{ m.country | default: "" }}</td>
-              <td class="team-td-specs">{{ m.specializations | default: "" }}</td>
-            </tr>
-            {% endif %}
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
-  </section>
 </div>
