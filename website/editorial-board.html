@@ -9,105 +9,89 @@ description: Editorial board of Management & Marketing journal
     <h1 class="section-title">Editorial Board</h1>
   </div>
 
-  <!-- Co-Editors-in-Chief -->
-  <section class="mb-xl">
+  <!-- Co-Editors-in-Chief (cards — prominent) -->
+  <section class="mb-lg">
     <h2>Co-Editors-in-Chief</h2>
-    <div class="board-grid">
+    <div class="eic-row">
       {% for editor in site.data.editors %}
         {% if editor.role == "Co-Editor-in-Chief" %}
-        <div class="editor-card">
-          <span class="editor-role">{{ editor.role }}</span>
-          <h3 class="editor-name">{{ editor.name }}</h3>
-          <p class="editor-affiliation">{{ editor.affiliation }}</p>
-          <p class="editor-country">{{ editor.city }}{% if editor.city != "" %}, {% endif %}{{ editor.country }}</p>
+        <div class="eic-card">
+          <h3 class="eic-name">{{ editor.name }}</h3>
+          <p class="eic-affiliation">{{ editor.affiliation }}</p>
+          <p class="eic-country">{{ editor.city }}{% if editor.city != "" %}, {% endif %}{{ editor.country }}</p>
         </div>
         {% endif %}
       {% endfor %}
     </div>
   </section>
 
-  <!-- Associate Editors -->
-  <section class="mb-xl">
+  <!-- Associate Editors (compact table) -->
+  <section class="mb-lg">
     <h2>Associate Editors</h2>
-    <div class="board-grid">
-      {% for editor in site.data.editors %}
-        {% if editor.role == "Associate Editor" %}
-        <div class="editor-card">
-          <span class="editor-role">{{ editor.role }}</span>
-          <h3 class="editor-name">{{ editor.name }}</h3>
-          <p class="editor-affiliation">{{ editor.affiliation }}</p>
-          <p class="editor-country">{{ editor.city }}{% if editor.city != "" %}, {% endif %}{{ editor.country }}</p>
-        </div>
-        {% endif %}
-      {% endfor %}
-    </div>
+    <table class="editors-table">
+      <thead><tr><th>Name</th><th>Affiliation</th><th>Location</th></tr></thead>
+      <tbody>
+        {% for editor in site.data.editors %}
+          {% if editor.role == "Associate Editor" %}
+          <tr>
+            <td class="ed-name">{{ editor.name }}</td>
+            <td>{{ editor.affiliation }}</td>
+            <td class="ed-loc">{{ editor.city }}{% if editor.city != "" %}, {% endif %}{{ editor.country }}</td>
+          </tr>
+          {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
   </section>
 
-  <!-- Founding Editors -->
-  <section class="mb-xl">
-    <h2>Founding Editors</h2>
-    <div class="board-grid">
-      {% for editor in site.data.editors %}
-        {% if editor.role == "Founding Editor" %}
-        <div class="editor-card">
-          <span class="editor-role">{{ editor.role }}</span>
-          <h3 class="editor-name">{{ editor.name }}</h3>
-          <p class="editor-affiliation">{{ editor.affiliation }}</p>
-          <p class="editor-country">{{ editor.city }}{% if editor.city != "" %}, {% endif %}{{ editor.country }}</p>
-        </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </section>
+  <!-- Remaining roles in a compact 2-column grid -->
+  <div class="compact-roles-grid">
+    <!-- Founding Editors -->
+    <section>
+      <h3>Founding Editors</h3>
+      <ul class="compact-editor-list">
+        {% for editor in site.data.editors %}
+          {% if editor.role == "Founding Editor" %}
+          <li><strong>{{ editor.name }}</strong><br><span>{{ editor.affiliation }}, {{ editor.country }}</span></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
 
-  <!-- Advisory Board -->
-  <section class="mb-xl">
-    <h2>Advisory Board</h2>
-    <div class="board-grid">
-      {% for editor in site.data.editors %}
-        {% if editor.role == "Advisory Board" %}
-        <div class="editor-card">
-          <span class="editor-role">{{ editor.role }}</span>
-          <h3 class="editor-name">{{ editor.name }}</h3>
-          <p class="editor-affiliation">{{ editor.affiliation }}</p>
-          <p class="editor-country">{{ editor.city }}{% if editor.city != "" %}, {% endif %}{{ editor.country }}</p>
-        </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </section>
+    <!-- Advisory Board -->
+    <section>
+      <h3>Advisory Board</h3>
+      <ul class="compact-editor-list">
+        {% for editor in site.data.editors %}
+          {% if editor.role == "Advisory Board" %}
+          <li><strong>{{ editor.name }}</strong><br><span>{{ editor.affiliation }}, {{ editor.country }}</span></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
 
-  <!-- Managing Editors -->
-  <section class="mb-xl">
-    <h2>Managing Editors</h2>
-    <div class="board-grid">
-      {% for editor in site.data.editors %}
-        {% if editor.role == "Managing Editor" %}
-        <div class="editor-card">
-          <span class="editor-role">{{ editor.role }}</span>
-          <h3 class="editor-name">{{ editor.name }}</h3>
-          <p class="editor-affiliation">{{ editor.affiliation }}</p>
-          <p class="editor-country">{{ editor.city }}{% if editor.city != "" %}, {% endif %}{{ editor.country }}</p>
-        </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </section>
+    <!-- Managing Editors -->
+    <section>
+      <h3>Managing Editors</h3>
+      <ul class="compact-editor-list">
+        {% for editor in site.data.editors %}
+          {% if editor.role == "Managing Editor" %}
+          <li><strong>{{ editor.name }}</strong><br><span>{{ editor.affiliation }}, {{ editor.country }}</span></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
 
-  <!-- Assistant Editors -->
-  <section class="mb-xl">
-    <h2>Assistant Editors</h2>
-    <div class="board-grid">
-      {% for editor in site.data.editors %}
-        {% if editor.role == "Assistant Editor" %}
-        <div class="editor-card">
-          <span class="editor-role">{{ editor.role }}</span>
-          <h3 class="editor-name">{{ editor.name }}</h3>
-          <p class="editor-affiliation">{{ editor.affiliation }}</p>
-          <p class="editor-country">{{ editor.city }}{% if editor.city != "" %}, {% endif %}{{ editor.country }}</p>
-        </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </section>
+    <!-- Assistant Editors -->
+    <section>
+      <h3>Assistant Editors</h3>
+      <ul class="compact-editor-list">
+        {% for editor in site.data.editors %}
+          {% if editor.role == "Assistant Editor" %}
+          <li><strong>{{ editor.name }}</strong><br><span>{{ editor.affiliation }}, {{ editor.country }}</span></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
 </div>
