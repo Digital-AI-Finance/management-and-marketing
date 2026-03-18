@@ -11,25 +11,68 @@ description: Current calls for papers and special collections for Management & M
 
   {% if site.data.calls_for_papers.size > 0 %}
     {% for cfp in site.data.calls_for_papers %}
-    <div class="article-item">
-      <span class="article-type-badge">{{ cfp.type }}</span>
-      <h2 class="article-title-link">{{ cfp.title }}</h2>
-      <p class="article-excerpt">{{ cfp.description }}</p>
-      <div class="article-meta-info">
-        <span><strong>Status:</strong> {{ cfp.status }}</span>
-        <span class="meta-separator">|</span>
-        <span><strong>Submission deadline:</strong> {{ cfp.submission_deadline }}</span>
+    <div class="cfp-card">
+      <div class="cfp-header">
+        <span class="article-type-badge">{{ cfp.type }}</span>
+        <span class="cfp-status-badge">{{ cfp.status }}</span>
       </div>
+      <h2 class="cfp-title">{{ cfp.title }}</h2>
+
+      <div class="cfp-meta">
+        <span><strong>Submission deadline:</strong> {{ cfp.submission_deadline }}</span>
+        <span class="meta-separator">|</span>
+        <span><strong>Journal:</strong> {{ cfp.journal }}</span>
+        <span class="meta-separator">|</span>
+        <span><strong>Publishing model:</strong> {{ cfp.publishing_model }}</span>
+      </div>
+
+      <div class="cfp-description">
+        <p>{{ cfp.description }}</p>
+        <p>{{ cfp.objective }}</p>
+      </div>
+
+      {% if cfp.themes %}
+      <div class="cfp-themes">
+        <h3>Topics of Interest</h3>
+        <ul>
+          {% for theme in cfp.themes %}
+          <li>{{ theme }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      {% if cfp.closing_statement %}
+      <p class="cfp-closing">{{ cfp.closing_statement }}</p>
+      {% endif %}
+
+      {% if cfp.guest_editors %}
+      <div class="cfp-editors">
+        <h3>Guest Editors</h3>
+        <div class="cfp-editors-grid">
+          {% for editor in cfp.guest_editors %}
+          <div class="cfp-editor-card">
+            <h4 class="cfp-editor-name">{{ editor.name }}</h4>
+            <p class="cfp-editor-affiliation">{{ editor.affiliation }}, {{ editor.country }}</p>
+            <details class="cfp-editor-bio">
+              <summary>About</summary>
+              <p>{{ editor.bio }}</p>
+            </details>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
       {% if cfp.url %}
-      <a href="{{ cfp.url }}" class="btn btn-secondary" target="_blank" rel="noopener">View on SpringerLink</a>
+      <div class="cfp-actions">
+        <a href="{{ cfp.url }}" class="btn btn-primary" target="_blank" rel="noopener">View Collection on SpringerLink</a>
+        <a href="https://link.springer.com/journal/44491/submission-guidelines" class="btn btn-secondary" target="_blank" rel="noopener">Submission Guidelines</a>
+      </div>
       {% endif %}
     </div>
     {% endfor %}
   {% else %}
     <p>There are currently no open calls for papers. Please check back later.</p>
   {% endif %}
-
-  <div class="mt-xl">
-    <a href="{{ site.data.journal.url }}" class="btn btn-primary" target="_blank" rel="noopener">Submit Your Manuscript</a>
-  </div>
 </div>

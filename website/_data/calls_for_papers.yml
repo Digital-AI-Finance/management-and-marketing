@@ -1,6 +1,79 @@
 - title: "Generative AI in Finance: Innovation, Risk, and Systemic Stability"
   type: "Collection"
-  description: "This special collection focuses on the rapidly growing role of generative artificial intelligence (AI) in transforming financial markets."
   status: "Open for submissions"
-  submission_deadline: "2026-12-31"
-  url: "https://link.springer.com/journal/44491"
+  submission_deadline: "31 December 2026"
+  url: "https://link.springer.com/collections/ehheeffcfa"
+  journal: "Management & Marketing"
+  publishing_model: "Open access"
+  description: >-
+    This special collection focuses on the rapidly growing role of generative artificial intelligence (AI) in
+    transforming financial markets, institutions, and decision-making processes. Recent advances in large language
+    models (LLM), generative neural networks, and foundation models have enabled new forms of data generation,
+    prediction, and automation that extend well beyond traditional machine learning approaches. These developments
+    are reshaping financial modeling, risk management, trading, regulatory compliance, and customer-facing
+    financial services.
+  objective: >-
+    The objective of this collection is to bring together theoretical, empirical, and applied research that
+    examines both the opportunities and challenges posed by generative AI in finance. We invite high-quality
+    submissions addressing, but not limited to, the following themes.
+  themes:
+    - "Applications of generative AI in financial modeling, forecasting, and risk management, including asset pricing, portfolio optimization, and stress testing"
+    - "Effects of generative AI on financial markets and institutions, such as trading behavior, liquidity, price discovery, and organizational decision-making"
+    - "Case studies and real-world implementations of generative AI in banking, asset management, insurance, fintech, and regulatory technology (RegTech)"
+    - "Macroeconomic and financial stability implications of generative AI, including effects on aggregate risk, credit cycles, asset price dynamics, and systemic resilience"
+    - "Future directions and emerging trends in AI-driven financial technologies, governance structures, and human-AI collaboration in finance"
+  closing_statement: >-
+    This collection seeks to foster interdisciplinary dialogue among researchers in finance, economics, computer
+    science, and policy, and to advance both academic understanding and practical insights into the evolving role
+    of generative AI in the financial ecosystem.
+  guest_editors:
+    - name: "Raffaella Calabrese"
+      affiliation: "University of Edinburgh"
+      city: "Edinburgh"
+      country: "United Kingdom"
+      bio: >-
+        Raffaella is Professor in Statistics and Data Science at the University of Edinburgh Business School.
+        She is an expert in Climate Stress Testing, Open Banking, FinTech, credit risk modelling and access
+        to finance for small businesses. She develops new analytical techniques for credit risk, such as scoring
+        models, Loss Given Default, stress testing, interpretability, fairness and explainability. She collaborates
+        with financial institutions, government bodies and regulators, across different countries, including
+        the UK, the US, China and multiple EU countries.
+    - name: "Xinheng Liu"
+      affiliation: "Changsha University of Science and Technology"
+      city: "Changsha"
+      country: "China"
+      bio: >-
+        Xinheng Liu is an Associate Professor at Changsha University of Science & Technology. He obtained his
+        Ph.D. in Finance from Sun Yat-sen University in 2022. His research focuses on corporate finance, climate
+        finance, and green finance. He has published extensively in leading academic journals, including the
+        International Journal of Finance & Economics, Energy Economics, Economics Letters, and International
+        Review of Economics & Finance.
+    - name: "Jörg Osterrieder"
+      affiliation: "University of Twente"
+      city: "Enschede"
+      country: "The Netherlands"
+      bio: >-
+        Jörg Robert Osterrieder is Associate Professor of Finance and Artificial Intelligence at the University
+        of Twente and Professor of Finance at the University of Applied Sciences of the Grisons. His research
+        spans artificial intelligence, machine learning, quantitative finance, risk management, and digital
+        finance. He coordinates the €3.8 million EU-funded Marie Skłodowska-Curie Industrial Doctoral Network
+        on Digital Finance and previously chaired the European COST Action on FinTech and AI in Finance.
+    - name: "Claudia Tarantola"
+      affiliation: "University of Milan"
+      city: "Milan"
+      country: "Italy"
+      bio: >-
+        Claudia Tarantola is Full Professor of Statistics in the Department of Economics, Management, and
+        Quantitative Methods at the University of Milan. Her research spans Bayesian statistics, clustering
+        techniques, copula modeling, categorical data analysis, graphical models, and statistical approaches
+        to financial risk. She served as Italy's representative on the Management Committee of the COST Action
+        CA19130 FinTech and Artificial Intelligence (2020-2024).
+    - name: "Ruting Wang"
+      affiliation: "City University of Hong Kong"
+      city: "Hong Kong"
+      country: "Hong Kong"
+      bio: >-
+        Ruting Wang is a postdoctoral researcher at City University of Hong Kong and Sun Yat-sen University.
+        She is a member of the IDA Institute of Digital Assets, Bucharest University of Economic Studies and
+        MSCA Digital Finance. Her research fields include Digital Assets, Corporate Finance, Quantitative Finance,
+        Financial Intermediation, Risk Management, Green Finance, and Causal Inference.
