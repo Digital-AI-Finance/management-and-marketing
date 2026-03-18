@@ -1,0 +1,78 @@
+---
+layout: two-column
+title: About the Journal
+description: About Management & Marketing journal
+---
+
+<div class="content-page">
+  <div class="section-header">
+    <h1 class="section-title">About {{ site.data.journal.title }}</h1>
+  </div>
+
+  <h2>Overview</h2>
+  <p>{{ site.data.journal.description }}</p>
+
+  <h2>Vision</h2>
+  <p><em>{{ site.data.aims_scope.vision }}</em></p>
+
+  <h2>Mission</h2>
+  <p>{{ site.data.aims_scope.mission }}</p>
+
+  <h2>Journal Information</h2>
+  <table>
+    <tbody>
+      <tr><td><strong>Title</strong></td><td>{{ site.data.journal.title }}: {{ site.data.journal.subtitle }}</td></tr>
+      <tr><td><strong>Publisher</strong></td><td>{{ site.data.journal.publisher }}</td></tr>
+      <tr><td><strong>Publisher Brand</strong></td><td>{{ site.data.journal.publisher_brand }}</td></tr>
+      <tr><td><strong>eISSN</strong></td><td>{{ site.data.journal.eissn }}</td></tr>
+      <tr><td><strong>ISSN (Print)</strong></td><td>{{ site.data.journal.issn }}</td></tr>
+      <tr><td><strong>Journal ID</strong></td><td>{{ site.data.journal.journal_id }}</td></tr>
+      <tr><td><strong>Publishing Model</strong></td><td>{{ site.data.journal.publishing_model }}</td></tr>
+      <tr><td><strong>Peer Review</strong></td><td>{{ site.data.journal.peer_review }}</td></tr>
+      <tr><td><strong>First Published</strong></td><td>{{ site.data.journal.first_published }}</td></tr>
+      <tr><td><strong>Founded By</strong></td><td>{{ site.data.journal.founded_by }}</td></tr>
+      <tr><td><strong>Springer Nature From</strong></td><td>{{ site.data.journal.springer_nature_from }}</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Journal Metrics</h2>
+  <div class="metrics-grid">
+    <div class="metric-card">
+      <span class="metric-card-value">{{ site.data.journal.journal_metrics.impact_factor | split: ' ' | first }}</span>
+      <span class="metric-card-label">Impact Factor (2024)</span>
+    </div>
+    <div class="metric-card">
+      <span class="metric-card-value">{{ site.data.journal.journal_metrics.five_year_impact_factor | split: ' ' | first }}</span>
+      <span class="metric-card-label">5-Year Impact Factor (2024)</span>
+    </div>
+  </div>
+
+  <h2>Licenses</h2>
+  <p>Articles are published under the following Creative Commons licenses:</p>
+  <ul>
+    {% for license in site.data.journal.creative_commons_licenses %}
+    <li>{{ license }}</li>
+    {% endfor %}
+  </ul>
+
+  <h2>Indexing &amp; Abstracting</h2>
+  <p>{{ site.data.journal.title }} is abstracted and indexed in:</p>
+  <ul>
+    {% for service in site.data.journal.indexing_and_abstracting %}
+    <li>{{ service }}</li>
+    {% endfor %}
+  </ul>
+
+  <h2>Content Categories</h2>
+  <ul>
+    {% for category in site.data.journal.content_categories %}
+    <li>{{ category }}</li>
+    {% endfor %}
+  </ul>
+
+  <h2>Links</h2>
+  <ul>
+    <li><a href="{{ site.data.journal.url }}" target="_blank" rel="noopener">Journal on SpringerLink</a></li>
+    <li><a href="https://www.springernature.com/" target="_blank" rel="noopener">Springer Nature</a></li>
+  </ul>
+</div>

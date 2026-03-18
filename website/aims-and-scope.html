@@ -1,0 +1,39 @@
+---
+layout: two-column
+title: Aims & Scope
+description: Aims and scope of Management & Marketing journal
+---
+
+<div class="content-page">
+  <div class="section-header">
+    <h1 class="section-title">Aims &amp; Scope</h1>
+  </div>
+
+  <h2>Overview</h2>
+  <p>{{ site.data.aims_scope.overview }}</p>
+
+  <h2>Scope</h2>
+  <p>{{ site.data.aims_scope.scope }}</p>
+
+  <h2>Key Areas of Interest</h2>
+  <ul>
+    {% for area in site.data.aims_scope.key_areas %}
+    <li>{{ area }}</li>
+    {% endfor %}
+  </ul>
+
+  <h2>Global Outlook</h2>
+  <p>{{ site.data.aims_scope.global_outlook }}</p>
+
+  <h2>Audience</h2>
+  <p>{{ site.data.aims_scope.audience }}</p>
+
+  <h2>Contemporary Focus</h2>
+  <p>{{ site.data.aims_scope.contemporary_focus }}</p>
+
+  <h2>Vision</h2>
+  <p><em>{{ site.data.aims_scope.vision }}</em></p>
+
+  <h2>Mission</h2>
+  <p>{{ site.data.aims_scope.mission }}</p>
+</div>

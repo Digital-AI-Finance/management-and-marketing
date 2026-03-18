@@ -1,43 +1,55 @@
 <footer class="site-footer">
-    <div class="container">
-        <div class="footer-grid">
-            <div class="footer-column">
-                <h3>{{ site.title }}</h3>
-                <p>{{ site.description }}</p>
-                <p class="footer-text">Published by the Faculty of Marketing, Bucharest University of Economic Studies, Romania.</p>
-            </div>
-
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="{{ '/aims-and-scope.html' | relative_url }}">Aims & Scope</a></li>
-                    <li><a href="{{ '/editorial-board.html' | relative_url }}">Editorial Board</a></li>
-                    <li><a href="{{ '/articles.html' | relative_url }}">All Articles</a></li>
-                    <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>Resources</h3>
-                <ul class="footer-links">
-                    <li><a href="#">Submit Article</a></li>
-                    <li><a href="#">Author Guidelines</a></li>
-                    <li><a href="#">Reviewer Guidelines</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="https://editorial.springernature.com/">Editorial Login</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>Publishing Partner</h3>
-                <p class="footer-text">In partnership with Springer Nature</p>
-                <p class="open-access-statement">This is an Open Access journal. All articles are freely available online.</p>
-            </div>
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand Column -->
+      <div class="footer-column">
+        <div class="footer-brand">
+          <span class="footer-springer-logo">Springer Nature</span>
+          <p class="footer-text">Advancing Discovery</p>
         </div>
-
-        <div class="footer-bottom">
-            <p>&copy; {{ 'now' | date: "%Y" }} Management & Marketing. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
-            <p class="footer-note">Built with Jekyll. Hosted on GitHub Pages.</p>
+        <div class="open-access-statement">
+          <span class="open-access-badge">Open Access</span>
+          <p class="footer-text">Articles published under {% for license in site.data.journal.creative_commons_licenses %}{{ license }}{% unless forloop.last %} or {% endunless %}{% endfor %} license.</p>
         </div>
+      </div>
+
+      <!-- Explore Column -->
+      <div class="footer-column">
+        <h3 class="footer-title">Explore</h3>
+        <ul class="footer-links">
+          <li><a href="{{ '/aims-and-scope.html' | relative_url }}">Aims &amp; Scope</a></li>
+          <li><a href="{{ '/editorial-board.html' | relative_url }}">Editorial Board</a></li>
+          <li><a href="{{ '/about.html' | relative_url }}">About the Journal</a></li>
+          <li><a href="{{ '/ethics.html' | relative_url }}">Ethics &amp; Disclosures</a></li>
+          <li><a href="{{ '/articles.html' | relative_url }}">Articles</a></li>
+        </ul>
+      </div>
+
+      <!-- For Authors Column -->
+      <div class="footer-column">
+        <h3 class="footer-title">For Authors</h3>
+        <ul class="footer-links">
+          <li><a href="{{ site.data.journal.url }}" target="_blank" rel="noopener">Submit Manuscript</a></li>
+          <li><a href="{{ '/submission-guidelines.html' | relative_url }}">Submission Guidelines</a></li>
+          <li><a href="{{ '/fees-and-funding.html' | relative_url }}">Fees &amp; Funding</a></li>
+          <li><a href="{{ '/calls-for-papers.html' | relative_url }}">Calls for Papers</a></li>
+          <li><a href="https://editorial.springernature.com/" target="_blank" rel="noopener">Editor Login</a></li>
+        </ul>
+      </div>
+
+      <!-- Links Column -->
+      <div class="footer-column">
+        <h3 class="footer-title">Links</h3>
+        <ul class="footer-links">
+          <li><a href="{{ site.data.journal.url }}" target="_blank" rel="noopener">Journal on SpringerLink</a></li>
+          <li><a href="https://www.springernature.com/" target="_blank" rel="noopener">Springer Nature</a></li>
+        </ul>
+      </div>
     </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">&copy; {{ 'now' | date: "%Y" }} {{ site.data.journal.publisher }}. All rights reserved.</p>
+      <p class="footer-note">{{ site.data.journal.title }}: {{ site.data.journal.subtitle }} | eISSN: {{ site.data.journal.eissn }}</p>
+    </div>
+  </div>
 </footer>

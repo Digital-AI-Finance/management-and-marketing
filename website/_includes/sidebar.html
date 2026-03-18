@@ -1,0 +1,69 @@
+<aside class="sidebar">
+  <!-- Journal Metrics Widget -->
+  <div class="sidebar-widget">
+    <h3 class="widget-title">Journal Metrics</h3>
+    <div class="widget-content">
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <span class="metric-card-value">{{ site.data.journal.journal_metrics.impact_factor | split: ' ' | first }}</span>
+          <span class="metric-card-label">Impact Factor</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-card-value">{{ site.data.journal.journal_metrics.five_year_impact_factor | split: ' ' | first }}</span>
+          <span class="metric-card-label">5-Year IF</span>
+        </div>
+      </div>
+      <ul class="widget-list">
+        <li class="widget-list-item">
+          <span class="list-label">eISSN</span>
+          <span class="list-value">{{ site.data.journal.eissn }}</span>
+        </li>
+        <li class="widget-list-item">
+          <span class="list-label">Publishing Model</span>
+          <span class="list-value">{{ site.data.journal.publishing_model }}</span>
+        </li>
+        <li class="widget-list-item">
+          <span class="list-label">First Published</span>
+          <span class="list-value">{{ site.data.journal.first_published }}</span>
+        </li>
+        <li class="widget-list-item">
+          <span class="list-label">Springer Nature From</span>
+          <span class="list-value">{{ site.data.journal.springer_nature_from }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Submit Manuscript CTA -->
+  <div class="sidebar-widget cta-widget">
+    <h3 class="widget-title">Submit Manuscript</h3>
+    <div class="widget-content">
+      <p>Ready to submit your research?</p>
+      <a href="{{ site.data.journal.url }}" class="btn btn-primary" target="_blank" rel="noopener">Submit Manuscript</a>
+      <a href="{{ '/submission-guidelines.html' | relative_url }}" class="widget-link" style="display:block; margin-top:12px;">View submission guidelines &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Indexing & Abstracting Widget -->
+  <div class="sidebar-widget">
+    <h3 class="widget-title">Indexed In</h3>
+    <div class="widget-content">
+      <ul class="widget-list">
+        {% for service in site.data.journal.indexing_and_abstracting %}
+        <li class="widget-list-item">
+          <span class="list-value">{{ service }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <!-- About Widget -->
+  <div class="sidebar-widget">
+    <h3 class="widget-title">About This Journal</h3>
+    <div class="widget-content">
+      <p>{{ site.data.journal.description | truncate: 200 }}</p>
+      <a href="{{ '/about.html' | relative_url }}" class="widget-link">Read more &rarr;</a>
+    </div>
+  </div>
+</aside>

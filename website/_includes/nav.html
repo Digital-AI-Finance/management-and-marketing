@@ -1,24 +1,47 @@
-<nav class="site-nav">
-    <div class="container">
-        <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ '/aims-and-scope.html' | relative_url }}" class="nav-link {% if page.url contains 'aims-and-scope' %}active{% endif %}">Aims & Scope</a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ '/editorial-board.html' | relative_url }}" class="nav-link {% if page.url contains 'editorial-board' %}active{% endif %}">Editorial Board</a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ '/articles.html' | relative_url }}" class="nav-link {% if page.url contains 'articles' %}active{% endif %}">Articles</a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ '/about.html' | relative_url }}" class="nav-link {% if page.url contains 'about' %}active{% endif %}">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="https://editorial.springernature.com/" class="nav-link">Editor Login</a>
-            </li>
-        </ul>
+<nav class="site-nav" role="navigation">
+  <div class="container">
+    <input type="checkbox" id="mobile-menu-checkbox" class="mobile-menu-checkbox">
+    <div class="nav-wrapper">
+      <label for="mobile-menu-checkbox" class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
+        </li>
+        <li class="nav-item nav-dropdown">
+          <a href="{{ '/about.html' | relative_url }}" class="nav-link nav-dropdown-toggle {% if page.url contains 'about' or page.url contains 'aims' or page.url contains 'ethics' %}active{% endif %}">
+            About
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li class="nav-dropdown-item"><a href="{{ '/aims-and-scope.html' | relative_url }}" class="nav-dropdown-link">Aims &amp; Scope</a></li>
+            <li class="nav-dropdown-item"><a href="{{ '/about.html' | relative_url }}" class="nav-dropdown-link">About the Journal</a></li>
+            <li class="nav-dropdown-item"><a href="{{ '/ethics.html' | relative_url }}" class="nav-dropdown-link">Ethics &amp; Disclosures</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="{{ '/editorial-board.html' | relative_url }}" class="nav-link {% if page.url contains 'editorial' %}active{% endif %}">Editors</a>
+        </li>
+        <li class="nav-item nav-dropdown">
+          <a href="{{ '/submission-guidelines.html' | relative_url }}" class="nav-link nav-dropdown-toggle {% if page.url contains 'submission' or page.url contains 'fees' or page.url contains 'calls' %}active{% endif %}">
+            For Authors
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li class="nav-dropdown-item"><a href="{{ '/submission-guidelines.html' | relative_url }}" class="nav-dropdown-link">Submission Guidelines</a></li>
+            <li class="nav-dropdown-item"><a href="{{ '/fees-and-funding.html' | relative_url }}" class="nav-dropdown-link">Fees &amp; Funding</a></li>
+            <li class="nav-dropdown-item"><a href="{{ '/calls-for-papers.html' | relative_url }}" class="nav-dropdown-link">Calls for Papers</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="{{ '/articles.html' | relative_url }}" class="nav-link {% if page.url contains 'articles' %}active{% endif %}">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://editorial.springernature.com/" class="nav-link nav-external-link" target="_blank" rel="noopener noreferrer">Editor Login</a>
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>

@@ -1,0 +1,24 @@
+<article class="article-item">
+  <div class="article-type-badge">{{ include.article.type | default: "Research Article" }}</div>
+  <h2 class="article-title">
+    <a href="{{ include.article.url | default: '#' }}">{{ include.article.title }}</a>
+  </h2>
+  <p class="article-authors">{{ include.article.authors }}</p>
+  <div class="article-meta">
+    <span class="pub-date">
+      <svg class="icon" viewBox="0 0 16 16" width="14" height="14"><path fill="currentColor" d="M4 0a1 1 0 0 0-1 1v1H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-1V1a1 1 0 0 0-2 0v1H5V1a1 1 0 0 0-1-1zM2 6h12v8H2V6z"/></svg>
+      Published: {{ include.article.date }}
+    </span>
+    {% if include.article.doi %}
+    <span class="article-doi">DOI: {{ include.article.doi }}</span>
+    {% endif %}
+    <span class="access-count">
+      <svg class="icon" viewBox="0 0 16 16" width="14" height="14"><path fill="currentColor" d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/><path fill="currentColor" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+      Accesses
+    </span>
+  </div>
+  {% if include.article.abstract %}
+  <p class="article-abstract">{{ include.article.abstract | truncate: 200 }}</p>
+  {% endif %}
+  <a href="{{ include.article.url | default: '#' }}" class="read-article-link">Read full article →</a>
+</article>

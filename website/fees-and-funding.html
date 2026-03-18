@@ -1,0 +1,63 @@
+---
+layout: two-column
+title: Fees & Funding
+description: Article processing charges and open access funding for Management & Marketing
+---
+
+<div class="content-page">
+  <div class="section-header">
+    <h1 class="section-title">Fees &amp; Funding</h1>
+  </div>
+
+  <h2>Open Access Publishing</h2>
+  <p>{{ site.data.journal.title }} is an {{ site.data.journal.publishing_model | downcase }} journal. Publishing your research open access makes it publicly available for everyone to read.</p>
+
+  <h3>Benefits of Open Access</h3>
+  <div class="quick-links">
+    <div class="quick-link-card">
+      <h3>{{ site.data.fees_funding.open_access_benefits.citations }}</h3>
+      <p>Citations</p>
+    </div>
+    <div class="quick-link-card">
+      <h3>{{ site.data.fees_funding.open_access_benefits.downloads }}</h3>
+      <p>Downloads</p>
+    </div>
+    <div class="quick-link-card">
+      <h3>{{ site.data.fees_funding.open_access_benefits.altmetric }}</h3>
+      <p>Altmetric Attention</p>
+    </div>
+  </div>
+
+  <h2>Article Processing Charge (APC)</h2>
+  <p>An article processing charge applies for each article accepted for publication. The current APC:</p>
+  <table>
+    <thead>
+      <tr><th>Currency</th><th>Amount</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>GBP</td><td>&pound;{{ site.data.fees_funding.article_processing_charge.gbp | round: 2 }}</td></tr>
+      <tr><td>USD</td><td>${{ site.data.fees_funding.article_processing_charge.usd | round: 2 }}</td></tr>
+      <tr><td>EUR</td><td>&euro;{{ site.data.fees_funding.article_processing_charge.eur | round: 2 }}</td></tr>
+    </tbody>
+  </table>
+  <p><em>{{ site.data.fees_funding.article_processing_charge.currency_note }}</em></p>
+  <p>The APC is determined from the {{ site.data.fees_funding.article_processing_charge.determined_from }}.</p>
+
+  <h2>Waivers &amp; Discounts</h2>
+  <ul>
+    <li><strong>Low-income countries:</strong> {{ site.data.fees_funding.waivers_and_discounts.low_income_countries }}</li>
+    <li><strong>Financial need:</strong> {{ site.data.fees_funding.waivers_and_discounts.financial_need }}</li>
+    <li><strong>Application timing:</strong> {{ site.data.fees_funding.waivers_and_discounts.application_timing }}</li>
+  </ul>
+  <p>{{ site.data.fees_funding.institutional_agreements }}</p>
+
+  <h2>Creative Commons Licences</h2>
+  <p>{{ site.data.fees_funding.copyright }}</p>
+  {% for license in site.data.fees_funding.creative_commons_licenses %}
+  <div class="alert-box">
+    <h4 class="alert-title">{{ license.license }}</h4>
+    <p class="alert-text"><strong>{{ license.full_name }}</strong></p>
+    <p class="alert-text">{{ license.description }}</p>
+  </div>
+  {% endfor %}
+</div>

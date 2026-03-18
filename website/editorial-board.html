@@ -1,0 +1,113 @@
+---
+layout: default
+title: Editorial Board
+description: Editorial board of Management & Marketing journal
+---
+
+<div class="container content-page">
+  <div class="section-header">
+    <h1 class="section-title">Editorial Board</h1>
+  </div>
+
+  <!-- Co-Editors-in-Chief -->
+  <section class="mb-xl">
+    <h2>Co-Editors-in-Chief</h2>
+    <div class="board-grid">
+      {% for editor in site.data.editors %}
+        {% if editor.role == "Co-Editor-in-Chief" %}
+        <div class="editor-card">
+          <span class="editor-role">{{ editor.role }}</span>
+          <h3 class="editor-name">{{ editor.name }}</h3>
+          <p class="editor-affiliation">{{ editor.affiliation }}</p>
+          <p class="editor-country">{{ editor.city }}{% if editor.city != "" %}, {% endif %}{{ editor.country }}</p>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Associate Editors -->
+  <section class="mb-xl">
+    <h2>Associate Editors</h2>
+    <div class="board-grid">
+      {% for editor in site.data.editors %}
+        {% if editor.role == "Associate Editor" %}
+        <div class="editor-card">
+          <span class="editor-role">{{ editor.role }}</span>
+          <h3 class="editor-name">{{ editor.name }}</h3>
+          <p class="editor-affiliation">{{ editor.affiliation }}</p>
+          <p class="editor-country">{{ editor.city }}{% if editor.city != "" %}, {% endif %}{{ editor.country }}</p>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Founding Editors -->
+  <section class="mb-xl">
+    <h2>Founding Editors</h2>
+    <div class="board-grid">
+      {% for editor in site.data.editors %}
+        {% if editor.role == "Founding Editor" %}
+        <div class="editor-card">
+          <span class="editor-role">{{ editor.role }}</span>
+          <h3 class="editor-name">{{ editor.name }}</h3>
+          <p class="editor-affiliation">{{ editor.affiliation }}</p>
+          <p class="editor-country">{{ editor.city }}{% if editor.city != "" %}, {% endif %}{{ editor.country }}</p>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Advisory Board -->
+  <section class="mb-xl">
+    <h2>Advisory Board</h2>
+    <div class="board-grid">
+      {% for editor in site.data.editors %}
+        {% if editor.role == "Advisory Board" %}
+        <div class="editor-card">
+          <span class="editor-role">{{ editor.role }}</span>
+          <h3 class="editor-name">{{ editor.name }}</h3>
+          <p class="editor-affiliation">{{ editor.affiliation }}</p>
+          <p class="editor-country">{{ editor.city }}{% if editor.city != "" %}, {% endif %}{{ editor.country }}</p>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Managing Editors -->
+  <section class="mb-xl">
+    <h2>Managing Editors</h2>
+    <div class="board-grid">
+      {% for editor in site.data.editors %}
+        {% if editor.role == "Managing Editor" %}
+        <div class="editor-card">
+          <span class="editor-role">{{ editor.role }}</span>
+          <h3 class="editor-name">{{ editor.name }}</h3>
+          <p class="editor-affiliation">{{ editor.affiliation }}</p>
+          <p class="editor-country">{{ editor.city }}{% if editor.city != "" %}, {% endif %}{{ editor.country }}</p>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Assistant Editors -->
+  <section class="mb-xl">
+    <h2>Assistant Editors</h2>
+    <div class="board-grid">
+      {% for editor in site.data.editors %}
+        {% if editor.role == "Assistant Editor" %}
+        <div class="editor-card">
+          <span class="editor-role">{{ editor.role }}</span>
+          <h3 class="editor-name">{{ editor.name }}</h3>
+          <p class="editor-affiliation">{{ editor.affiliation }}</p>
+          <p class="editor-country">{{ editor.city }}{% if editor.city != "" %}, {% endif %}{{ editor.country }}</p>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+</div>

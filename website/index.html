@@ -1,144 +1,74 @@
 ---
-layout: default
+layout: two-column
 title: Home
+description: Management & Marketing - A Springer Nature Open Access Journal
 ---
 
-<section class="hero">
-    <div class="container">
-        <h1 class="hero-title">{{ site.title }}</h1>
-        <p class="hero-subtitle">{{ site.tagline }}</p>
-        <p class="hero-description">
-            An international, open access journal publishing cutting-edge research in management,
-            marketing, economics, and business studies. We advance knowledge in the field through
-            rigorous peer-reviewed scholarship and innovative research methodologies.
-        </p>
-        <a href="{{ '/articles.html' | relative_url }}" class="hero-cta">Explore Articles</a>
-    </div>
+<div class="section-header">
+  <h1 class="section-title">{{ site.data.journal.title }}</h1>
+  <p class="section-description"><em>{{ site.data.journal.subtitle }}</em></p>
+</div>
+
+<section class="mb-xl">
+  <p>{{ site.data.journal.description }}</p>
+  <p><strong>Publisher:</strong> {{ site.data.journal.publisher }} (from {{ site.data.journal.springer_nature_from }})</p>
+  <p><strong>Founded:</strong> {{ site.data.journal.first_published }} by {{ site.data.journal.founded_by }}</p>
 </section>
 
-<div class="container">
-    <!-- Latest Articles Section -->
-    <section class="section">
-        <div class="section-header">
-            <h2 class="section-title">Latest Articles</h2>
-            <p class="section-description">Recently published research from leading scholars worldwide</p>
-        </div>
+<section class="mb-xl">
+  <h2>Key Areas</h2>
+  <p>{{ site.data.aims_scope.scope }}</p>
+  <div class="quick-links">
+    {% for area in site.data.aims_scope.key_areas %}
+    <div class="quick-link-card">
+      <p><strong>{{ area }}</strong></p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
 
-        <div class="articles-grid">
-            {% if site.data.articles %}
-                {% for article in site.data.articles limit:6 %}
-                <article class="article-card">
-                    <span class="article-type">{{ article.type | default: "Research Article" }}</span>
-                    <h3 class="article-title">
-                        <a href="{{ article.url | default: '#' }}">{{ article.title }}</a>
-                    </h3>
-                    <p class="article-authors">{{ article.authors }}</p>
-                    <p class="article-meta">
-                        {% if article.volume %}Vol. {{ article.volume }}, {% endif %}
-                        {% if article.issue %}No. {{ article.issue }}, {% endif %}
-                        {{ article.year }}
-                    </p>
-                    {% if article.abstract %}
-                    <p class="article-abstract">
-                        {{ article.abstract | truncate: 180 }}
-                    </p>
-                    {% endif %}
-                    <a href="{{ article.url | default: '#' }}" class="article-link">Read Full Article</a>
-                </article>
-                {% endfor %}
-            {% else %}
-                <p>No articles available at this time. Please check back soon.</p>
-            {% endif %}
-        </div>
+<section class="mb-xl">
+  <h2>Co-Editors-in-Chief</h2>
+  <div class="board-grid">
+    {% for editor in site.data.editors %}
+      {% if editor.role == "Co-Editor-in-Chief" %}
+      <div class="editor-card">
+        <span class="editor-role">{{ editor.role }}</span>
+        <h3 class="editor-name">{{ editor.name }}</h3>
+        <p class="editor-affiliation">{{ editor.affiliation }}</p>
+        <p class="editor-country">{{ editor.city }}{% if editor.city != "" %}, {% endif %}{{ editor.country }}</p>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <p class="mt-md"><a href="{{ '/editorial-board.html' | relative_url }}">View full editorial board &rarr;</a></p>
+</section>
 
-        <div style="text-align: center;">
-            <a href="{{ '/articles.html' | relative_url }}" class="hero-cta">View All Articles</a>
-        </div>
-    </section>
+{% if site.data.calls_for_papers.size > 0 %}
+<section class="mb-xl">
+  <h2>Calls for Papers</h2>
+  {% for cfp in site.data.calls_for_papers %}
+  <div class="alert-box">
+    <h4 class="alert-title">{{ cfp.title }}</h4>
+    <p class="alert-text">{{ cfp.description }}</p>
+    <p class="alert-text"><strong>Status:</strong> {{ cfp.status }} | <strong>Deadline:</strong> {{ cfp.submission_deadline }}</p>
+    <a href="{{ '/calls-for-papers.html' | relative_url }}" class="alert-link">Learn more &rarr;</a>
+  </div>
+  {% endfor %}
+</section>
+{% endif %}
 
-    <!-- Quick Links Section -->
-    <section class="section">
-        <div class="section-header">
-            <h2 class="section-title">For Authors & Reviewers</h2>
-        </div>
-
-        <div class="quick-links">
-            <a href="#" class="quick-link-card">
-                <h3>Submit Your Research</h3>
-                <p>Learn about our submission process and author guidelines</p>
-            </a>
-
-            <a href="{{ '/aims-and-scope.html' | relative_url }}" class="quick-link-card">
-                <h3>Aims & Scope</h3>
-                <p>Discover what topics and methodologies we publish</p>
-            </a>
-
-            <a href="#" class="quick-link-card">
-                <h3>Review for Us</h3>
-                <p>Join our community of expert peer reviewers</p>
-            </a>
-
-            <a href="#" class="quick-link-card">
-                <h3>Open Access Policy</h3>
-                <p>All articles are freely available under CC BY 4.0</p>
-            </a>
-        </div>
-    </section>
-
-    <!-- Featured Editors Section -->
-    <section class="section featured-editors">
-        <div class="section-header">
-            <h2 class="section-title">Editorial Leadership</h2>
-            <p class="section-description">Distinguished scholars guiding our academic mission</p>
-        </div>
-
-        <div class="board-grid">
-            {% if site.data.editors %}
-                {% for editor in site.data.editors limit:4 %}
-                    {% if editor.role == "Editor-in-Chief" or editor.featured %}
-                    <div class="editor-card">
-                        <span class="editor-role">{{ editor.role }}</span>
-                        <h3 class="editor-name">{{ editor.name }}</h3>
-                        <p class="editor-affiliation">{{ editor.affiliation }}</p>
-                        <p class="editor-country">{{ editor.country }}</p>
-                    </div>
-                    {% endif %}
-                {% endfor %}
-            {% endif %}
-        </div>
-
-        <div style="text-align: center; margin-top: var(--spacing-md);">
-            <a href="{{ '/editorial-board.html' | relative_url }}" class="hero-cta">Full Editorial Board</a>
-        </div>
-    </section>
-
-    <!-- Journal Info Section -->
-    <section class="section">
-        <div class="section-header">
-            <h2 class="section-title">About the Journal</h2>
-        </div>
-
-        <div style="max-width: 800px; margin: 0 auto;">
-            {% if site.data.journal %}
-            <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text-color);">
-                {{ site.data.journal.description | default: "Management & Marketing is a peer-reviewed, open access journal published by the Faculty of Marketing at Bucharest University of Economic Studies. We publish innovative research that advances knowledge in management, marketing, economics, and business studies." }}
-            </p>
-            {% else %}
-            <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text-color);">
-                Management & Marketing is a peer-reviewed, open access journal published by the Faculty of Marketing at Bucharest University of Economic Studies. We publish innovative research that advances knowledge in management, marketing, economics, and business studies.
-            </p>
-            {% endif %}
-
-            <div style="margin-top: var(--spacing-md); padding: var(--spacing-md); background: var(--accent-color); border-radius: var(--radius-md); border-left: 4px solid var(--primary-color);">
-                <h3 style="color: var(--primary-color); margin-bottom: var(--spacing-sm);">Key Information</h3>
-                <ul style="list-style: none; margin: 0;">
-                    <li style="margin-bottom: var(--spacing-xs);"><strong>ISSN:</strong> 1842-0206</li>
-                    <li style="margin-bottom: var(--spacing-xs);"><strong>Publisher:</strong> Bucharest University of Economic Studies</li>
-                    <li style="margin-bottom: var(--spacing-xs);"><strong>Partner:</strong> Springer Nature</li>
-                    <li style="margin-bottom: var(--spacing-xs);"><strong>Access:</strong> Open Access (CC BY 4.0)</li>
-                    <li style="margin-bottom: var(--spacing-xs);"><strong>Frequency:</strong> Quarterly</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-</div>
+<section class="mb-xl">
+  <h2>Journal Information</h2>
+  <table>
+    <tbody>
+      <tr><td><strong>eISSN</strong></td><td>{{ site.data.journal.eissn }}</td></tr>
+      <tr><td><strong>Publisher</strong></td><td>{{ site.data.journal.publisher }}</td></tr>
+      <tr><td><strong>Publishing Model</strong></td><td>{{ site.data.journal.publishing_model }}</td></tr>
+      <tr><td><strong>Peer Review</strong></td><td>{{ site.data.journal.peer_review }}</td></tr>
+      <tr><td><strong>Impact Factor</strong></td><td>{{ site.data.journal.journal_metrics.impact_factor }}</td></tr>
+      <tr><td><strong>5-Year Impact Factor</strong></td><td>{{ site.data.journal.journal_metrics.five_year_impact_factor }}</td></tr>
+      <tr><td><strong>Article Types</strong></td><td>{% for type in site.data.journal.article_types %}{{ type }}{% unless forloop.last %}, {% endunless %}{% endfor %}</td></tr>
+    </tbody>
+  </table>
+</section>

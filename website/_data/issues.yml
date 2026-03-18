@@ -1,0 +1,20 @@
+# Note: Journal uses "continuous article publishing" model on Springer Nature (from Jan 2026)
+# No volumes/issues published on Springer yet as of March 2026
+# The volumes/issues page returns 404 on link.springer.com/journal/44491/volumes-and-issues
+# Articles page shows: "No results were found"
+# Previous volumes (pre-Springer) may be available from prior publisher
+
+publishing_model: "continuous"
+springer_start: "January 2026"
+note: "Continuous article publishing - articles published as they are accepted"
+
+volumes:
+  - number: 19
+    year: 2026
+    issues:
+      - number: 1
+        date: "January 2026"
+        article_count: 0
+        url: "https://link.springer.com/journal/44491/articles"
+        current: true
+        note: "Continuous article publishing on Springer Nature"

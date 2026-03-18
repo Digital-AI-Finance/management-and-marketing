@@ -1,0 +1,122 @@
+---
+layout: two-column
+title: Submission Guidelines
+description: Instructions for authors submitting to Management & Marketing
+---
+
+<div class="content-page">
+  <div class="section-header">
+    <h1 class="section-title">Submission Guidelines</h1>
+  </div>
+
+  <h2>Article Types</h2>
+  <p>The article types published by {{ site.data.journal.title }} include:</p>
+  <ul>
+    {% for type in site.data.submission_guidelines.article_types %}
+    <li><strong>{{ type }}</strong></li>
+    {% endfor %}
+  </ul>
+
+  <h2>Manuscript Submission</h2>
+  <p>Submission of a manuscript implies:</p>
+  <ul>
+    {% for item in site.data.submission_guidelines.manuscript_submission.implies %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+  <p><strong>Format:</strong> {{ site.data.submission_guidelines.manuscript_submission.format }}</p>
+
+  <h2>Title Page</h2>
+  <p>Please make sure your title page contains the following information:</p>
+  <ul>
+    {% for item in site.data.submission_guidelines.title_page.required_elements %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+
+  <h2>Abstract</h2>
+  <p>Please provide an abstract of <strong>{{ site.data.submission_guidelines.abstract.min_words }} to {{ site.data.submission_guidelines.abstract.max_words }} words</strong>. The abstract should not contain any undefined abbreviations or unspecified references.</p>
+  <p><em>{{ site.data.submission_guidelines.abstract.extended_note }}</em> (up to {{ site.data.submission_guidelines.abstract.extended_max_words }} words).</p>
+
+  <h2>Keywords</h2>
+  <p>Please provide <strong>{{ site.data.submission_guidelines.keywords.min }} to {{ site.data.submission_guidelines.keywords.max }} keywords</strong> for indexing purposes.</p>
+
+  <h2>Text Formatting</h2>
+  <ul>
+    <li><strong>Font:</strong> {{ site.data.submission_guidelines.text_formatting.font }}</li>
+    <li><strong>Emphasis:</strong> {{ site.data.submission_guidelines.text_formatting.emphasis }}</li>
+    <li><strong>Page numbering:</strong> {{ site.data.submission_guidelines.text_formatting.page_numbering }}</li>
+    <li><strong>Headings:</strong> {{ site.data.submission_guidelines.text_formatting.headings }}</li>
+    <li><strong>Equations:</strong> {{ site.data.submission_guidelines.text_formatting.equations }}</li>
+  </ul>
+
+  <h2>References</h2>
+  <p><strong>Citation style:</strong> {{ site.data.submission_guidelines.references.style }}</p>
+  <p><strong>In-text format:</strong> {{ site.data.submission_guidelines.references.in_text_format }}</p>
+  <p>Examples:</p>
+  <ul>
+    {% for example in site.data.submission_guidelines.references.examples %}
+    <li><code>{{ example }}</code></li>
+    {% endfor %}
+  </ul>
+  <p>{{ site.data.submission_guidelines.references.author_limit }}</p>
+  <p><strong>DOI format:</strong> {{ site.data.submission_guidelines.references.doi_format }}</p>
+
+  <h2>Tables</h2>
+  <ul>
+    <li><strong>Numbering:</strong> {{ site.data.submission_guidelines.tables.numbering }}</li>
+    <li><strong>Citation:</strong> {{ site.data.submission_guidelines.tables.citation }}</li>
+    <li><strong>Caption:</strong> {{ site.data.submission_guidelines.tables.caption }}</li>
+    <li><strong>Footnotes:</strong> {{ site.data.submission_guidelines.tables.footnotes }}</li>
+  </ul>
+
+  <h2>Artwork and Illustrations</h2>
+  <table>
+    <thead>
+      <tr><th>Type</th><th>Format</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Vector graphics</td><td>{{ site.data.submission_guidelines.artwork.formats.vector }}</td></tr>
+      <tr><td>Halftone</td><td>{{ site.data.submission_guidelines.artwork.formats.halftone }}</td></tr>
+      <tr><td>Also accepted</td><td>{{ site.data.submission_guidelines.artwork.formats.also_accepted }}</td></tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr><th>Type</th><th>Minimum Resolution</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Line art</td><td>{{ site.data.submission_guidelines.artwork.resolution.line_art }}</td></tr>
+      <tr><td>Halftone</td><td>{{ site.data.submission_guidelines.artwork.resolution.halftone }}</td></tr>
+      <tr><td>Combination</td><td>{{ site.data.submission_guidelines.artwork.resolution.combination }}</td></tr>
+    </tbody>
+  </table>
+  <p><strong>Color:</strong> {{ site.data.submission_guidelines.artwork.color }}</p>
+  <p><strong>Lettering:</strong> {{ site.data.submission_guidelines.artwork.lettering }}</p>
+  <p><strong>Naming:</strong> {{ site.data.submission_guidelines.artwork.naming }}</p>
+
+  <h2>Review Articles</h2>
+  <p><strong>Author bio:</strong> {{ site.data.submission_guidelines.review_articles.author_bio }}</p>
+  <p><strong>Author photo:</strong> {{ site.data.submission_guidelines.review_articles.author_photo }}</p>
+
+  <h2>Declarations</h2>
+  <p>The following declarations are required:</p>
+  <ul>
+    {% for item in site.data.submission_guidelines.declarations.required %}
+    <li><strong>{{ item }}</strong></li>
+    {% endfor %}
+  </ul>
+  <p><em>{{ site.data.submission_guidelines.declarations.note }}</em></p>
+
+  <h2>Use of Large Language Models (LLMs)</h2>
+  <ul>
+    <li><strong>Authorship:</strong> {{ site.data.submission_guidelines.llm_policy.authorship }}</li>
+    <li><strong>Documentation:</strong> {{ site.data.submission_guidelines.llm_policy.documentation }}</li>
+    <li><strong>Exception:</strong> {{ site.data.submission_guidelines.llm_policy.exception }}</li>
+    <li><strong>Accountability:</strong> {{ site.data.submission_guidelines.llm_policy.accountability }}</li>
+  </ul>
+
+  <div class="mt-xl">
+    <a href="{{ site.data.journal.url }}" class="btn btn-primary" target="_blank" rel="noopener">Submit Your Manuscript</a>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+---
+layout: two-column
+title: Articles
+description: Published articles in Management & Marketing
+---
+
+<div class="content-page">
+  <div class="section-header">
+    <h1 class="section-title">Articles</h1>
+  </div>
+
+  <div class="alert-box">
+    <h4 class="alert-title">Continuous Article Publishing</h4>
+    <p class="alert-text">{{ site.data.journal.title }} uses continuous article publishing on Springer Nature. Articles will appear here as they are published.</p>
+    <a href="{{ site.data.journal.url }}/articles" class="alert-link" target="_blank" rel="noopener">Browse articles on SpringerLink &rarr;</a>
+  </div>
+
+  {% if site.data.articles.size > 0 %}
+  <div class="article-list mt-xl">
+    {% for article in site.data.articles %}
+      {% include article-list-item.html article=article %}
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>

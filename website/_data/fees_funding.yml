@@ -1,0 +1,31 @@
+publishing_model: "Open Access"
+open_access_benefits:
+  citations: "1.6x more citations than non-OA articles"
+  downloads: "4x more downloads than non-OA articles"
+  altmetric: "2.5x more Altmetric attention"
+  news_mentions: "1.9x more news mentions"
+  policy_mentions: "1.2x more policy mentions"
+
+article_processing_charge:
+  gbp: 1490.00
+  usd: 1990.00
+  eur: 1690.00
+  currency_note: "Subject to VAT or local taxes where applicable"
+  determined_from: "Date on which the article is accepted for publication"
+
+waivers_and_discounts:
+  low_income_countries: "Automatic APC waivers and discounts for corresponding authors in world's lowest income countries"
+  financial_need: "Case-by-case consideration for other authors"
+  application_timing: "Must be made at point of manuscript submission; not during review or after acceptance"
+
+institutional_agreements: "Springer Nature offers agreements enabling institutions to cover OA publishing costs"
+
+creative_commons_licenses:
+  - license: "CC BY-NC-ND 4.0"
+    full_name: "Creative Commons Attribution Non-Commercial No Derivatives 4.0 International"
+    description: "Article can be shared for non-commercial purposes with author credit. Permission needed for commercial re-use or derivative versions."
+  - license: "CC BY 4.0"
+    full_name: "Creative Commons Attribution 4.0 International"
+    description: "Article may be shared and adapted for any purpose, including commercially, with author credit."
+
+copyright: "Authors retain copyright of their articles"

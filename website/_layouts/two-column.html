@@ -16,7 +16,14 @@
 
   <main class="main-wrapper">
     <div class="container">
-      {{ content }}
+      <div class="page-layout">
+        <div class="main-column">
+          {{ content }}
+        </div>
+        <div class="sidebar-column">
+          {% include sidebar.html %}
+        </div>
+      </div>
     </div>
   </main>
 

@@ -1,19 +1,36 @@
 <header class="site-header">
+  <!-- Top Bar -->
+  <div class="top-bar">
     <div class="container">
-        <div class="header-branding">
-            <div class="publisher-logo">
-                <span class="springer-badge">Springer Nature</span>
-            </div>
-            <div class="journal-identity">
-                <h1 class="journal-title">
-                    <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-                </h1>
-                <p class="journal-tagline">{{ site.tagline }}</p>
-            </div>
-        </div>
-        <div class="header-meta">
-            <span class="open-access-badge">Open Access</span>
-            <span class="issn">ISSN 1842-0206</span>
-        </div>
+      <div class="top-bar-left">
+        <a href="https://www.springernature.com/" class="publisher-link" target="_blank" rel="noopener">Springer Nature</a>
+      </div>
+      <div class="top-bar-right">
+        <a href="https://editorial.springernature.com/" class="top-bar-link" target="_blank" rel="noopener">Editor Login</a>
+        <a href="{{ site.data.journal.url }}" class="top-bar-link" target="_blank" rel="noopener">Journal on SpringerLink</a>
+      </div>
     </div>
+  </div>
+
+  <!-- Journal Banner -->
+  <div class="journal-banner">
+    <div class="container">
+      <div class="banner-content">
+        <div class="springer-logo">SN</div>
+        <div class="journal-info">
+          <h1 class="journal-title">
+            <a href="{{ '/' | relative_url }}">{{ site.data.journal.title }}</a>
+          </h1>
+          <div class="journal-meta">
+            <span class="journal-tagline">{{ site.data.journal.subtitle }}</span>
+            <span class="issn-info">eISSN: {{ site.data.journal.eissn }}</span>
+          </div>
+        </div>
+        <div class="banner-actions">
+          <span class="open-access-badge" title="This is an Open Access journal">Open Access</span>
+          <a href="{{ site.data.journal.url }}" class="btn btn-primary" target="_blank" rel="noopener">Submit Manuscript</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>

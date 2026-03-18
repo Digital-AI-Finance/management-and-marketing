@@ -1,0 +1,35 @@
+---
+layout: two-column
+title: Calls for Papers
+description: Current calls for papers and special collections for Management & Marketing
+---
+
+<div class="content-page">
+  <div class="section-header">
+    <h1 class="section-title">Calls for Papers</h1>
+  </div>
+
+  {% if site.data.calls_for_papers.size > 0 %}
+    {% for cfp in site.data.calls_for_papers %}
+    <div class="article-item">
+      <span class="article-type-badge">{{ cfp.type }}</span>
+      <h2 class="article-title-link">{{ cfp.title }}</h2>
+      <p class="article-excerpt">{{ cfp.description }}</p>
+      <div class="article-meta-info">
+        <span><strong>Status:</strong> {{ cfp.status }}</span>
+        <span class="meta-separator">|</span>
+        <span><strong>Submission deadline:</strong> {{ cfp.submission_deadline }}</span>
+      </div>
+      {% if cfp.url %}
+      <a href="{{ cfp.url }}" class="btn btn-secondary" target="_blank" rel="noopener">View on SpringerLink</a>
+      {% endif %}
+    </div>
+    {% endfor %}
+  {% else %}
+    <p>There are currently no open calls for papers. Please check back later.</p>
+  {% endif %}
+
+  <div class="mt-xl">
+    <a href="{{ site.data.journal.url }}" class="btn btn-primary" target="_blank" rel="noopener">Submit Your Manuscript</a>
+  </div>
+</div>

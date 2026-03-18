@@ -1,0 +1,89 @@
+article_types:
+  - "Original Research"
+  - "Review Articles"
+  - "Editorials"
+
+manuscript_submission:
+  format: "Word (.docx) or LaTeX"
+  latex_template: "Springer Nature LaTeX template"
+  implies:
+    - "Work has not been published before"
+    - "Not under consideration elsewhere"
+    - "Publication approved by all co-authors"
+    - "Approved by responsible authorities at institute"
+
+title_page:
+  required_elements:
+    - "Concise and informative title"
+    - "Author name(s)"
+    - "Author affiliation(s): institution, department, city, state, country"
+    - "Corresponding author email (active)"
+    - "ORCID (16-digit, if available)"
+
+abstract:
+  min_words: 150
+  max_words: 250
+  extended_max_words: 450
+  extended_note: "For systematic reviews and original research where topic dictates"
+  no_abbreviations: true
+  no_unspecified_references: true
+
+keywords:
+  min: 4
+  max: 6
+  purpose: "Indexing purposes"
+
+text_formatting:
+  font: "10-point Times Roman"
+  emphasis: "Use italics"
+  page_numbering: "Automatic"
+  headings: "Decimal system, max 3 levels"
+  equations: "Equation editor or MathType"
+
+references:
+  style: "APA version 7"
+  in_text_format: "Name and year in parentheses"
+  examples:
+    - "Thompson (1990)"
+    - "Becker and Seligman (1996)"
+    - "Abbott, 1991; Barakat et al., 1995"
+  author_limit: "Include all authors up to 20; for larger groups, first 19 + ellipsis + final author"
+  doi_format: "Full DOI links (e.g., https://doi.org/abc)"
+  list: "Alphabetized by last name of first author"
+  journal_names: "Italicized"
+  book_titles: "Italicized"
+
+tables:
+  numbering: "Arabic numerals"
+  citation: "Consecutive numerical order in text"
+  caption: "Required for each table"
+  footnotes: "Superscript lower-case letters"
+
+artwork:
+  formats:
+    vector: "EPS (preferred)"
+    halftone: "TIFF"
+    also_accepted: "MSOffice files"
+  resolution:
+    line_art: "1200 dpi minimum"
+    halftone: "300 dpi minimum"
+    combination: "600 dpi minimum"
+  color: "RGB (8 bits per channel)"
+  lettering: "Helvetica or Arial, 2-3mm (8-12pt)"
+  naming: "Fig1.eps, Fig2.eps, etc."
+
+review_articles:
+  author_bio: "200-word author bio required"
+  author_photo: "Required"
+
+declarations:
+  required:
+    - "Competing Interests"
+    - "Author Contributions"
+  note: "Must be provided via submission interface"
+
+llm_policy:
+  authorship: "LLMs (e.g., ChatGPT) do not satisfy authorship criteria"
+  documentation: "Use of LLM must be documented in Methods section"
+  exception: "AI-assisted copy editing (readability, grammar, spelling) does not need declaration"
+  accountability: "Human accountability required for final version"
