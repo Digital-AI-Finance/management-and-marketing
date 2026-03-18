@@ -452,7 +452,7 @@ a:focus {
     content: '';
     display: block;
     height: 6px;
-    border-radius: 8px;
+    border-radius: var(--radius-md);
     background: transparent;
     position: absolute;
     bottom: 0;
