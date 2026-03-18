@@ -1,0 +1,420 @@
+- name: Jörg Osterrieder
+  role: Lead Editor
+  affiliation: University of Twente
+  country: Netherlands
+  qualification: Finance and AI
+  specializations: finance financial mathematics
+  email: joerg.osterrieder@utwente.nl
+- name: Liu Gang
+  role: Lead Editor
+  email: gang.liu@connect.polyu.hk
+- name: Constatin Bratianu
+  role: Founding Editor
+  affiliation: National University of Political Studies and Public Administration,
+    Romania
+  country: Romania
+  email: constantin.bratianu@fabiz.ase.ro
+- name: Nicolae Al. Pop
+  role: Founding Editor
+  affiliation: Bucharest University of Economic Studies
+  country: Romania
+  qualification: Strategic Marketing and Relationship Marketing
+  specializations: International Marketing Relationship Marketing Strategic Marketing
+    Marketing Research Neuromarketing
+  email: nicolae_al_pop@yahoo.com
+- name: Alina Mihaela Dima
+  role: Advisory Board
+  affiliation: Bucharest University of Economic Studies
+  country: Romania
+  email: alina.dima@ase.ro
+- name: Lucian Albu
+  role: Advisory Board
+  affiliation: Romanian Academy
+  country: Romania
+  qualification: Macroeconomics, Nonlinear Modelling
+  specializations: Macroeconomics, nonlinear programming
+  email: albul@ipe.ro
+- name: Wolfgang Karl Härdle
+  role: Advisory Board
+  affiliation: Humboldt University, Germany; NYCU, TW; SMU, SG; Xiamen U, CN; Charles
+    U, CZ
+  country: Germany
+  qualification: Applied Management Science
+  specializations: Digital Finance Modern Statistics Machine Learning Smart Data Analytics
+    Decision Analytics
+  email: haerdle@hu-berlin.de
+- name: Adriana AnaMaria Davidescu
+  role: Managing Editor
+  affiliation: Bucharest University of Economic Studies
+  country: Romania
+  qualification: Statistics, Econometrics
+  specializations: Data Science, HRM, econometrics, informality, sustainable development
+    shadow economy, labour market dynamics regional development sustainable finance
+    impact evaluation
+  email: adriana.davidescu@csie.ase.ro
+- name: Mihai Busu
+  role: Managing Editor
+  affiliation: Bucharest University of Economic Studies
+  country: Romania
+  qualification: Risk MAnagement, Economic Modelling
+  specializations: Risk Management Circular Economy Market Competition
+  email: mihail.busu@ase.ro
+- name: Diana Agafitei
+  role: Assistant Editor
+  affiliation: Bucharest University of Economic Studies
+  country: Romania
+  qualification: Statistics, Econometrics
+  specializations: econometrics, data science, informality, labour market analysis,
+    regional development
+  email: diana.agafitei@csie.ase.ro
+- name: Vargas Mandalina Vanesa
+  role: Assistant Editor
+  affiliation: Bucharest University of Economic Studies
+  country: Romania
+  qualification: Business Administration
+  specializations: E-commerce personal data leadership
+  email: vanesa.teodorescu@fabiz.ase.ro
+- name: Ana Ivanisevic Hernaus
+  role: Associate Editor
+  affiliation: Faculty of Economics & Business, University of Zagreb
+  country: Croatia
+  qualification: Finance
+  specializations: Finance
+  email: aivanisev@net.efzg.hr
+- name: Beata Gavurová
+  role: Associate Editor
+  affiliation: Technical University in Košice
+  country: Slovakia
+  qualification: Measurement and Performance, Process Management, Health Economics
+  specializations: Measurement and Performance, Process Management
+  email: gavurova@utb.cz
+- name: Bowei Chen
+  role: Associate Editor
+  affiliation: University of Glasgow
+  country: Scotland
+  qualification: Data Science, Marketing Analytics
+  specializations: Data Science, Marketing Analytics
+  email: bowei.chen@glasgow.ac.uk
+- name: Claudia Tarantola
+  role: Associate Editor
+  affiliation: University of Milan
+  country: Italy
+  qualification: Statistics
+  specializations: Statistics
+  email: claudia.tarantola@unimi.it
+- name: Codruta Mare
+  role: Associate Editor
+  qualification: Statistics, Econometrics
+  email: codruta.mare@ubbcluj.ro
+- name: Dan Traian Pele
+  role: Associate Editor
+  affiliation: Bucharest University of Economic Studies
+  country: Romania
+  qualification: Statistics, Financial Markets, Econometrics
+  specializations: Statistics, Econometrics, Risk Management and Insurance
+  email: pele@ase.ro
+- name: Florentina Paraschiv
+  role: Associate Editor
+  affiliation: Zeppelin University
+  country: Norway
+  qualification: Financial Management
+  email: florentina.paraschiv@ntnu.no
+- name: Galena Pisoni
+  role: Associate Editor
+  affiliation: York St John University
+  country: UK
+  qualification: Finance
+  specializations: Finance
+  email: g.pisoni@yorksj.ac.uk
+- name: Huei-Wen Teng
+  role: Associate Editor
+  affiliation: National Yang Ming Chiao Tung University
+  country: Taiwan
+  qualification: Finance, Statistics, Risk Management
+  specializations: Risk Management, Fintech
+  email: venteng@gmail.com
+- name: Jason Lu Jin
+  role: Associate Editor
+  affiliation: Business School, Sun Yat-sen University
+  country: China
+  qualification: Strategy and International Business
+  specializations: Innovation Management, Inter-Organizational Relationship in Emerging
+    Markets, Digitalization
+  email: jinlu7@mail.sysu.edu.cn
+- name: Kamal Bouzinab
+  role: Associate Editor
+  affiliation: The Université du Québec à Montréal, Canada
+  email: bouzinab.kamal@uqam.ca
+- name: Li Guo
+  role: Associate Editor
+- name: Maria Iannario
+  role: Associate Editor
+  affiliation: University of Naples
+  country: Italy
+  qualification: Statistics
+  specializations: Statistics
+  email: maria.iannario@unina.it
+- name: Maria Osipenko
+  role: Associate Editor
+  affiliation: Berlin School of Economics and Law
+  country: Germany
+  qualification: Business Mathematics, Statistics
+  specializations: Statistics, Analytics
+  email: maria.osipenko@hwr-berlin.de
+- name: Mark Cummins
+  role: Associate Editor
+  affiliation: Strathclyde Business School
+  country: Glasgow
+  qualification: Finance, Energy and Commodity Finance, Model Risk Management
+  specializations: finance, energy and commodity finance, model risk management, FinTech,
+    cybersecurity  and data breaches
+  email: mark.cummins@dcu.ie
+- name: Martin Hellmich
+  role: Associate Editor
+  affiliation: Frankfurt School of Finance and Management
+  country: Germany
+  qualification: Finace and Management
+  email: mhellmich@deloitte.de
+- name: Monica Achim
+  role: Associate Editor
+  affiliation: Babes Bolyai University
+  country: Romania
+  qualification: Finance
+  specializations: Finance
+  email: monica.achim@econ.ubbcluj.ro
+- name: Monika Gehde-Trapp
+  role: Associate Editor
+  affiliation: Universität Hohenheim
+  country: Germany
+  qualification: Market Microstructure, Asset Management
+  email: monika.gehde-trapp@uni-hohenheim.de
+- name: Pedro Ferreira
+  role: Associate Editor
+  affiliation: University Portucalense
+  country: Portugal
+  qualification: Human Resource Management, Organisational Behaviour, Marketing
+  email: ferreirapedrojorge@gmail.com
+- name: Petre Caraiani
+  role: Associate Editor
+  affiliation: Bucharest University of Economic Studies
+  country: Romania
+  qualification: Economics, Forecasting, Data Science
+  specializations: data science, entrepreneurship, startup performance
+  email: petre.caraiani@fabiz.ase.ro
+- name: Phuong Anh Nguyen
+  role: Associate Editor
+  affiliation: Vietnam National University of Ho Chi Minh City
+  country: Vietnam
+  qualification: Financial Econometrics
+  specializations: Banking Efficiency, Banking Risk Management
+  email: npanh@hcmiu.edu.vn
+- name: Richard Fedorko
+  role: Associate Editor
+  affiliation: Richard Fedorko, University of Prešov
+  country: Slovakia
+  qualification: Marketing, Digital Marketing, E-commerce
+  specializations: Marketing, International Business
+  email: richard.fedorko@unipo.sk
+- name: Roman Matkowskyy
+  role: Associate Editor
+  affiliation: Department of finance and accounting
+  qualification: 'Co-Director of research centre: Financial Market and Corporate Outcomes
+    Rennes School of Business'
+  specializations: Finance
+  email: roman.matkovskyy@rennes-sb.com
+- name: Rui Ren
+  role: Associate Editor
+  affiliation: Humboldt-Universität zu Berlin
+  country: Germany
+  qualification: Financial Management
+  specializations: Financial Management, Econometrics
+  email: rui.ren@hu-berlin.de
+- name: Ruting Wang
+  role: Associate Editor
+  affiliation: City University of Hong Kong
+  country: Hong Kong
+  qualification: Finance
+  specializations: Digital Finance, Corporate Finance, Machine Learning, Financial
+    Risk
+  email: rutingrainywang@icloud.com
+- name: Rüdiger Kiesel
+  role: Associate Editor
+  affiliation: University Duisburg-Essen
+  country: Germany
+  qualification: Energy Trading, Risk Management
+  specializations: Carbon Finance Energy Trading Risk Management
+  email: ruediger.kiesel@uni-due.de
+- name: Stefan Lessmann
+  role: Associate Editor
+- name: Torsten J. Gerpott
+  role: Associate Editor
+  affiliation: Universität Duisburg-Essen
+  country: Germany
+  qualification: Telecommunications, Business Management
+  specializations: Technology Management, Telecommunications
+  email: torsten.gerpott@uni-due.de
+- name: Vasile Alecsandru Strat
+  role: Associate Editor
+  affiliation: Bucharest University of Economic Studies
+  country: Romania
+  qualification: Statistics, Econometrics
+  specializations: regional analysis, sustainable development, statistics, econometrics
+  email: vasile.strat@bbs.ro
+- name: Veni Arakelian
+  role: Associate Editor
+  affiliation: Ministry of Finance
+  country: Greece
+  qualification: Finance
+  specializations: Finance
+  email: veniarakelian@yahoo.com
+- name: Xi Xiang
+  role: Associate Editor
+  affiliation: School of Mathematics and Statistics, Jishou University
+  country: China
+  qualification: Finance
+  specializations: Digital Finance,Corporate Finance, Financial Market
+  email: xixiang@jsu.edu.cn
+- name: Xinheng Liu
+  role: Associate Editor
+  affiliation: School of Economics and Management, Changsha University of Science
+    & Technology
+  country: China
+  qualification: Fnance
+  specializations: corporate finance, climate finance
+  email: liuxinheng@csust.edu.cn
+- name: Aino Kianto
+  role: Editorial Board Member
+  affiliation: LUT University
+  country: Finland
+  qualification: Information Systems and Management
+  specializations: Knowledge Management, Intellectual Capital
+  email: aino.Kianto@lut.fi
+- name: André Richelieu
+  role: Editorial Board Member
+  affiliation: Université du Québec à Montréal
+  country: Canada
+  qualification: Brand Management, Sport Marketing
+  specializations: Brand Management, Sport Marketing
+  email: richelieu.andre@uqam.ca
+- name: Babak Mehmanpazir
+  role: Editorial Board Member
+  affiliation: EM Strasbourg
+  country: France
+  qualification: Intercultural Management
+  specializations: Intercultural Management, Strategy
+  email: babak.mehmanpazir@em-strasbourg.eu
+- name: Carmen Păunescu
+  role: Editorial Board Member
+  affiliation: Bucharest University of Economic Studies
+  country: Romania
+  qualification: Business Administration
+  email: carmen.paunescu@fabiz.ase.ro
+- name: Chao Zhou
+  role: Editorial Board Member
+  affiliation: Department of Mathematics and Risk Management Institute, National University
+    of Singapore
+  country: Singapore
+  email: matzc@nus.edu.sg
+- name: Christian Fieseler
+  role: Editorial Board Member
+  affiliation: BI Norwegian Business School, Norway
+  email: christian.fieseler@bi.no
+- name: Christine Volkmann
+  role: Editorial Board Member
+  affiliation: University of Wuppertal
+  country: Germany
+  qualification: Entrepreneurship, Business Administration
+  specializations: Entrepreneurship, Small and Medium-sized Enterprises
+  email: volkmann@wiwi.uni-wuppertal.de
+- name: Dumitru Roman
+  role: Editorial Board Member
+  affiliation: University of Oslo, Norway
+  email: Dumitru.Roman@sintef.no
+- name: Ettori Bolisani
+  role: Editorial Board Member
+  affiliation: University of Padua
+  country: Italy
+  specializations: Knowledge Management Models, Communities of Practice, Knowledge
+    Exchanges and Economic Implications
+  email: ettore.bolisani@unipd.it
+- name: Francesco Bellini
+  role: Editorial Board Member
+  affiliation: University Sapienza of Rome
+  country: Italy
+  qualification: Innovation and Technology Management, Digital Transformation
+  specializations: Innovation, Technology Management
+  email: francesco.bellini@uniroma1.it
+- name: Inna Paiva
+  role: Editorial Board Member
+  affiliation: ISCTE Business School
+  country: Portugal
+  qualification: Accounting
+  specializations: Accounting, Auditing
+  email: inna.paiva@iscte-iul.pt
+- name: Juan Gabriel Cegarra-Navarro
+  role: Editorial Board Member
+  affiliation: Universidad Politécnica de Cartagena
+  country: Spain
+  qualification: Innovation Management, Organizational Behaviour
+  specializations: Innovation Management, Organizational Behaviour
+  email: juan.cegarra@upct.es
+- name: Kathleen Voges
+  role: Editorial Board Member
+  affiliation: Texas A&M University-San Antonio
+  country: United States
+  qualification: International Management
+  specializations: International Management, Strategic Management
+  email: kathleen.voges@tamusa.tamus.edu
+- name: Lavinia Stan
+  role: Editorial Board Member
+  affiliation: St Francis Xavier University
+  country: Romania
+  qualification: Democracy, Democratization
+  email: lstan@stfx.ca
+- name: Lifeng Yang
+  role: Editorial Board Member
+  affiliation: ShanghaiTech University
+  country: China
+  qualification: Consumer Behaviour, Consumer Psychology
+  specializations: Consumer Behaviour, Technology
+  email: yanglf@shanghaitech.edu.cn
+- name: Lixian Qian
+  role: Editorial Board Member
+  affiliation: Xi’an Jiaotong-Liverpool University
+  country: China
+  qualification: Marketing Analytics
+  specializations: Eco-innovation, Data-Driven Marketing
+  email: lixian.qian@xjtlu.edu.cn
+- name: Malgorzata Zieba
+  role: Editorial Board Member
+  affiliation: Gdansk University of Technology
+  country: Poland
+  qualification: Management, Economics
+  specializations: Knowledge Management, Innovation
+  email: mz@zie.pg.gda.pl
+- name: Robin Jarvis
+  role: Editorial Board Member
+  affiliation: Brunel University London
+  country: UK
+  qualification: Accounting
+  specializations: Accounting, Financial Reporting for SMEs
+  email: robin.jarvis@brunel.ac.uk
+- name: T.S. Devaraja
+  role: Editorial Board Member
+  affiliation: University of Mysore
+  country: India
+  qualification: International Marketing
+  specializations: International business,International Marketing,Accounting and Auditing,
+    Carbon Credit Marketing
+  email: devaraj@commerce.uni-mysore.ac.in
+- name: Takashi Kanamura
+  role: Editorial Board Member
+  affiliation: Kyoto University
+  country: Japan
+  qualification: Accounting, Financial Reporting for SMEs
+  specializations: ESG Investing, Electricity, Renewable Energy
+  email: tkanamura@gmail.com
+- name: Theodor Cojoianu
+  role: Editorial Board Member
+  affiliation: The University of Edinburgh, UK
+  email: theodor.cojoianu@ed.ac.uk
